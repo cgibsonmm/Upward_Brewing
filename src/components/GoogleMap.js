@@ -23,7 +23,6 @@ export default function GoogleMap() {
           width="50vw"
           height="350px"
           onViewportChange={(port) => setViewport(port)}
-          mapboxApiAccessToken={process.env.REACT_APP_MAP_BOX_API_KEY}
           mapStyle={Style}
         >
         <Marker
