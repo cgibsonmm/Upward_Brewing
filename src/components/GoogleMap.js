@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import ReactMapGl, {Marker} from 'react-map-gl'
 import Pin from '../images/logo.jpg'
+import Style from '../data/style.json'
 
 export default function GoogleMap() {
   const [viewport, setViewport] = useState({
@@ -23,6 +24,7 @@ export default function GoogleMap() {
           height="350px"
           onViewportChange={(port) => setViewport(port)}
           mapboxApiAccessToken={process.env.REACT_APP_MAP_BOX_API_KEY}
+          mapStyle={Style}
         >
         <Marker
           latitude={marker.latitude}
