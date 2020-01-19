@@ -582,6 +582,8 @@ video {
   height: auto;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Monofett&display=swap');
+
 .container {
   width: 100%;
 }
@@ -3598,6 +3600,10 @@ video {
 
 .font-mono {
   font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.font-funny {
+  font-family: Monofett, cursive;
 }
 
 .font-hairline {
@@ -11335,6 +11341,10 @@ video {
 
   .sm\:font-mono {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .sm\:font-funny {
+    font-family: Monofett, cursive;
   }
 
   .sm\:font-hairline {
@@ -19075,6 +19085,10 @@ video {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .md\:font-funny {
+    font-family: Monofett, cursive;
+  }
+
   .md\:font-hairline {
     font-weight: 100;
   }
@@ -26813,6 +26827,10 @@ video {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
+  .lg\:font-funny {
+    font-family: Monofett, cursive;
+  }
+
   .lg\:font-hairline {
     font-weight: 100;
   }
@@ -34549,6 +34567,10 @@ video {
 
   .xl\:font-mono {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .xl\:font-funny {
+    font-family: Monofett, cursive;
   }
 
   .xl\:font-hairline {

@@ -19,7 +19,7 @@ const pinStyle = {
 export default class CityPin extends PureComponent {
 
   render() {
-    const {size = 20, onClick} = this.props;
+    const {size=10, onClick} = this.props;
 
     return (
       <svg 

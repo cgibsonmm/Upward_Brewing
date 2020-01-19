@@ -1,51 +1,11 @@
 import React from 'react'
-import NavBar from '../components/Navbar'
-import Map from '../components/GoogleMap'
-import Background from '../images/background.jpg'
-import Back from '../images/back2.jpg'
+import bg from './../images/back2.jpg'
 
 export default function Home() {
   return (
-    <div style={styles.background}>
-      <NavBar/>
-      <ul style={styles.list}>
-        <li style={styles.heading}>
-        TAPROOM and KITCHEN
-        </li>
-        <li>MONDAY - THURSDAY - 5PM - 9PM</li>
-        <li>
-        FRIDAY - 4PM - 10PM
-        </li>
-        <li>
-          SATURDAY - 1PM - 10PM
-        </li>
-        <li>
-          SUNDAY - 1PM - 8PM
-        </li>
-        <li>
-          (KITCHEN CLOSED ON WEDNESDAY)
-        </li>
-      </ul>
-      <Map/>
+    <div style={{background: `url("${bg}")`}} className="flex flex-col w-3/4 m-auto h-32 justify-center bg-fixed">
+      <h1 className="text-center text-3xl">Upward Brewing</h1>
+      <p className="text-center">"Take some time and head up" <span className="font-hairline text-sm">- Someone</span></p>
     </div>
   )
-}
-
-const styles = {
-  list: {
-    listStyle: 'none',
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center'
-  },
-  heading: {
-    fontWeight: 'bold'
-  },
-  background: {
-    height: '100vh',
-    background: `url(${Background}) center center fixed`,
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover'
-  }
 }
